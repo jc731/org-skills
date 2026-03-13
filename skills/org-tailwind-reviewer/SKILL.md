@@ -25,7 +25,10 @@ When your review suggests that layout or repeated patterns might warrant a **dif
 
 ## When to Involve Other Skills
 
+- **Vague or multi-part UI request** → **org-receptionist** (or MCP `org_receptionist`) to route.
 - **Broader code review** (logic, security, tests, not just layout) → Recommend or defer to **org-senior-dev** for full diff review.
+- **Full QA sign-off** (acceptance criteria, tests, then docs) → **org-qa-team**; Tailwind review can be one input to that process.
+- **Structural or technical-debt risk** from layout choices → **org-risk-assessor** or **org-feedback-loop** (`docs_to_architecture_risk`) if it affects architecture/risk.
 - **Doc or architecture impact** from UI changes (e.g. new breakpoints or patterns to document) → **org-feedback-loop** or **org-docs-team** as appropriate.
 
 ## Using the Utility Script

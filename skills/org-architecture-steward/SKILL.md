@@ -15,13 +15,15 @@ The Architecture Steward provides informed technology recommendations and formal
 ## Stack Recommendation Guidelines
 - Prioritize boring, battle-tested technologies for standard use cases.
 - Call out trade-offs clearly (e.g., development speed vs. scalability).
-- Ensure the stack aligns with the project's preferences (if any).
+- Ensure the stack aligns with the project's preferences (if any). Project preferences (e.g. strictness, ask_before) can be read via **org-preferences** or MCP `org_get_preferences` so stack advice aligns with org policy.
 
 ## When to Involve Other Skills
 
+- **Vague or unclear stack/decision request** → **org-receptionist** (or MCP `org_receptionist`) to route.
 - **Frontend or UI stack / structure** (e.g. component architecture, Astro vs React) → Apply or reference **component-philosophy** so recommendations align with responsibility-based component design.
+- **Risk or tradeoff analysis** for a decision → **org-risk-assessor** (collaborate on risk assessment and risk Decision Records; steward owns ADRs, risk assessor owns risk-focused records).
 - **After a decision is recorded** → Recommend **org-docs-team** to update docs (README, ADR index, or setup guides) so the decision is discoverable.
-- **Decision needs to be acted on by development** (e.g. "all new UI must follow this pattern") → Use **org-feedback-loop** (e.g. `architecture_risk_to_development`) so the artifact routes to the right skill.
+- **Decision needs to be acted on by development** (e.g. "all new UI must follow this pattern") → Use **org-feedback-loop** (e.g. `architecture_risk_to_development`) so the artifact routes to **org-senior-dev** or **org-risk-assessor** as appropriate.
 
 ## Generating Decision Records
 

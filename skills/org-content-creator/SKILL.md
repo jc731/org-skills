@@ -23,6 +23,7 @@ The Content Creator writes production-ready blog posts and articles. It focuses 
 
 ## When to Involve Other Skills
 
+- **Vague or unclear content request** → **org-receptionist** (or MCP `org_receptionist`) to route; or refer to **org-content-strategist** for topic/strategy.
 - **Product or API documentation** (not blog) → Suggest **org-docs-team** for finalization and consistency.
 - **No topic or strategy yet** → Refer to **org-content-strategist** first.
 - **After publishing** and the project tracks docs post-release → Suggest **org-docs-team** for any related doc updates.

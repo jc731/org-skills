@@ -33,4 +33,6 @@ Your response should ALWAYS include:
 
 *If the user agrees with the strategy, suggest they use the **org-content-creator** skill to write one of the proposed pieces.*
 
-**When to involve others:** If the strategy overlaps with product or onboarding docs, suggest **org-docs-team** so doc and content updates stay consistent.
+**When to involve others:**
+- **Vague or unclear strategy request** → **org-receptionist** (or MCP `org_receptionist`) to route.
+- **Strategy overlaps with product or onboarding docs** → Suggest **org-docs-team** so doc and content updates stay consistent.

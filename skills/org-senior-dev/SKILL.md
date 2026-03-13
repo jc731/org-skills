@@ -10,7 +10,7 @@ description: Conducts strictness-based code reviews on git diffs, tailoring feed
 The Senior Dev provides structured, rule-based review of code changes by analyzing git diffs.
 
 1. **Understand Intent**: Determine the intent of the change (feature, bugfix, refactor).
-2. **Determine Strictness**: Retrieve the organizational strictness level (low, medium, high) by checking with the `org-orchestrator` or reviewing preferences.
+2. **Determine Strictness**: Retrieve the organizational strictness level via **org-preferences** (or MCP `org_get_preferences`) or **org-orchestrator**; if unavailable, assume a default (e.g. high) or read `mcp/preferences.json`.
 3. **Analyze Diff**: Run the `analyze_diff.py` script to extract key changes and risk areas.
 4. **Provide Feedback**: Format the review output clearly.
 
@@ -39,9 +39,12 @@ When reviewing **frontend or UI code** (e.g., Astro, React, Vue components), app
 
 ## When to Involve Other Skills
 
+- **Vague or multi-part request** → **org-receptionist** (or MCP `org_receptionist`) to route before doing a full review.
 - **Tailwind/React/Next/Nuxt UI** with layout or responsive concerns → Apply **org-tailwind-reviewer** for mobile-first class review (or note in feedback that tailwind-reviewer should run).
 - **Doc gaps** (e.g. new API or config with no docs) → Create a handoff via **org-feedback-loop** (e.g. `qa_to_documentation`) or recommend **org-docs-team** to finalize docs.
-- **Architecture or ADR violation** → Use **org-feedback-loop** (e.g. `architecture_risk_to_development`) or recommend **org-architecture-steward** if a decision record is needed.
+- **Architecture or ADR violation** → Use **org-feedback-loop** (e.g. `architecture_risk_to_development`) or recommend **org-architecture-steward** if a decision record is needed; **org-risk-assessor** if risk or mitigation guidance is needed.
+- **After review, before docs** → Recommend **org-qa-team** for sign-off (acceptance criteria, quality gates) then **org-docs-team** for finalization.
+- **Need current strictness or policy** → **org-preferences** or MCP `org_get_preferences`.
 
 ## Output Format
 

@@ -109,3 +109,6 @@ Be **pragmatic**, not extreme. Do not push abstraction as default; do not reject
 ## Working with Other Skills
 
 This skill is often applied *by* other skills when component structure is in scope: **org-senior-dev** uses it during frontend/UI code review; **org-tailwind-reviewer** uses it when layout or repeated patterns suggest different component boundaries. When you are used in that way, stay focused on responsibility and reuse; leave strictness, mobile classes, and docs to those skills. For full PR review or Tailwind-specific fixes, recommend **org-senior-dev** or **org-tailwind-reviewer** as appropriate.
+
+- **Component decisions with architectural or risk impact** (e.g. system boundaries, long-term maintainability) → **org-architecture-steward** for ADRs or **org-risk-assessor** for risk and mitigation guidance.
+- **Vague request about structure vs implementation** → **org-receptionist** to route to the right workflow.
