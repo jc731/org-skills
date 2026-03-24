@@ -24,6 +24,8 @@ Route work and call out these skills in the plan so the right expertise is appli
 - **Risk assessment, tradeoffs, or mitigation guidance** → **org-risk-assessor**.
 - **Documentation** after a feature/PR or doc audit → **org-docs-team** (finalization or audit). Plan should call for **org-qa-team** sign-off before docs when quality gates apply.
 - **Blog ideas, content calendar, what to write next** → **org-content-strategist**; **org-content-creator** to write a specific post.
+- **Testing / acceptance criteria / QA** in the plan → **org-qa-team** to define acceptance criteria and when to run tests.
+- **Frontend or UI** work that should consider accessibility → **org-accessibility** (a11y review) in addition to component-philosophy and tailwind as needed.
 - **Cross-domain issues** (e.g. code fixed but docs not updated, or implementation violates an ADR) → **org-feedback-loop** to create an artifact and hand off to the right skill.
 - **QA sign-off** before documentation phase → **org-qa-team** (verify acceptance criteria, quality gates, then hand off to **org-docs-team**).
 - **Change or view org preferences (strictness, ask_before)** → **org-preferences** (or MCP `org_get_preferences` / `org_set_preferences`). Orchestrator consumes preferences when building plans; preference updates are done via org-preferences.

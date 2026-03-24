@@ -41,6 +41,8 @@ When reviewing **frontend or UI code** (e.g., Astro, React, Vue components), app
 
 - **Vague or multi-part request** → **org-receptionist** (or MCP `org_receptionist`) to route before doing a full review.
 - **Tailwind/React/Next/Nuxt UI** with layout or responsive concerns → Apply **org-tailwind-reviewer** for mobile-first class review (or note in feedback that tailwind-reviewer should run).
+- **Frontend/UI** and accessibility (semantics, keyboard, ARIA) → Apply **org-accessibility** for a11y review, or note in feedback that org-accessibility should run.
+- **Test gaps, missing acceptance criteria, or coverage** → Recommend **org-qa-team** to define criteria or test steps; use **org-feedback-loop** if QA findings need to reach docs.
 - **Doc gaps** (e.g. new API or config with no docs) → Create a handoff via **org-feedback-loop** (e.g. `qa_to_documentation`) or recommend **org-docs-team** to finalize docs.
 - **Architecture or ADR violation** → Use **org-feedback-loop** (e.g. `architecture_risk_to_development`) or recommend **org-architecture-steward** if a decision record is needed; **org-risk-assessor** if risk or mitigation guidance is needed.
 - **After review, before docs** → Recommend **org-qa-team** for sign-off (acceptance criteria, quality gates) then **org-docs-team** for finalization.

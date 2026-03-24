@@ -33,10 +33,9 @@ Determine documentation rigor based on:
 
 ## When to Involve Other Skills
 
-- **Vague or unclear doc request** → **org-receptionist** (or MCP `org_receptionist`) to route.
-- **Audit finds architecture or risk gaps** (e.g. undocumented security or architectural assumptions) → Use **org-feedback-loop** (e.g. `docs_to_architecture_risk`) so **org-architecture-steward** or **org-risk-assessor** can address.
-- **Finalizing after a feature** → Prefer **org-qa-team** sign-off first when quality gates apply; if code quality or review is in question, recommend **org-senior-dev** for a diff review before marking complete.
-- **Documenting risk or mitigation decisions** → Align with **org-risk-assessor** (risk Decision Records) or **org-architecture-steward** (ADRs).
+- **Audit finds architecture or risk gaps** (e.g. undocumented security or architectural assumptions) → Use **org-feedback-loop** (e.g. `docs_to_architecture_risk`) so architecture or risk can be addressed.
+- **Finalizing after a feature** and code quality or review is in question → Recommend **org-senior-dev** for a diff review before marking complete.
+- **Test or QA documentation** (how to run tests, test env, acceptance criteria) is in scope → Suggest **org-qa-team** to define or validate test docs.
 - **Content or blog strategy** is missing or stale (e.g. no content calendar) → Suggest **org-content-strategist** to build a backlog; **org-content-creator** to write specific pieces.
 
 ## Using the Utility Script
